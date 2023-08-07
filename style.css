@@ -317,6 +317,6 @@ body {
     width: 100%;
   }
   .form textarea{
-    align-self: flex-start;
+    width: 100%;
   }
 }

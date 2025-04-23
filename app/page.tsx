@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Github from "@/components/ui/github-icon";
 import GoogleDrive from "@/components/ui/google";
@@ -92,7 +91,7 @@ export default function Portfolio() {
             >
               I&apos;m a passionate Computer Science student with a keen
               interest in web development and AI. Currently pursuing my
-              undergraduate degree, I'm excited about creating innovative
+              undergraduate degree, I&apos;m excited about creating innovative
               solutions and learning cutting-edge technologies.
             </motion.p>
             <motion.p

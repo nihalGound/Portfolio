@@ -43,7 +43,10 @@ export default function Portfolio() {
   ];
 
   const socialLinks = [
-    { name: "LinkedIn", url: "www.linkedin.com/in/nihal-gound-2063b3331" },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/nihal-gound-2063b3331",
+    },
     { name: "Github", url: "https://github.com/nihalGound" },
     { name: "Twitter", url: "https://x.com/nihal_Gound" },
     { name: "Leetcode", url: "https://leetcode.com/u/Nihal_13214/" },
@@ -75,10 +78,17 @@ export default function Portfolio() {
               animate={{ opacity: isLoaded ? 1 : 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              <Button variant="outline" size="sm" className="gap-2 text-sm">
-                <GoogleDrive />
-                View Resume
-              </Button>
+              <Link
+                href={
+                  "https://drive.google.com/file/d/1Q9DsJXExIslr_AoYxPgiefZS7GgFah-K/view?usp=sharing"
+                }
+                target="_blank"
+              >
+                <Button variant="outline" size="sm" className="gap-2 text-sm">
+                  <GoogleDrive />
+                  View Resume
+                </Button>
+              </Link>
             </motion.div>
             <motion.p
               className="text-zinc-400 leading-relaxed"
@@ -158,7 +168,7 @@ export default function Portfolio() {
                 Graduation: May 2026
               </p>
               <ul className="list-disc list-inside text-zinc-400 space-y-2">
-                <li>GPA: 9.35/10</li>
+                <li>GPA: 9.17/10</li>
                 <li>
                   Relevant Coursework: Data Structures, Algorithms, Web
                   Development, Database Systems, Operating System, Computer
